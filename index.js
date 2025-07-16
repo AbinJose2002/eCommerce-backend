@@ -33,8 +33,8 @@ app.post('/payment-intent', async (req, res) => {
           quantity: itemCount,
         },
       ],
-      success_url: 'http://localhost:3000/success', 
-      cancel_url: 'http://localhost:3000/fail',
+      success_url: 'https://e-commerce-theta-bay-66.vercel.app/success', 
+      cancel_url: 'https://e-commerce-theta-bay-66.vercel.app/fail',
     })
 
     res.send({ id: session.id })
